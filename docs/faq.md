@@ -1,10 +1,10 @@
 ---
-title: "FAQ: Frequently Asked Questions"
+başlık: "SSS: Sıkça Sorulan Sorular"
 ---
 
-The non-technical FAQ is now hosted in the [self-help knowledgebase](https://coda.io/@rmrk/faq).
+Teknik olmayan SSS artık [yardım bilgi bankasında](https://coda.io/@rmrk/faq) barındırılmaktadır.
 
-## How does IPFS hosting work?
+## IPFS barındırma nasıl çalışır?
 IPFS veya Gezegenler Arası Dosya Sistemi, "içerik karması" kullanır. Bu, bir içerik parçasının, aynı girdi için her zaman aynı çıktıyı üreten tek yönlü bir matematiksel işlev olan bir karma algoritmadan geçirildiği anlamına gelir. Orijinal içerikteki tek bir harfi bile değiştirmek tamamen farklı bir hash üretir.
 
 Bu karmalar daha sonra bir tarayıcının veya [IPFS ağ geçidinin](https://docs.ipfs.io/concepts/ipfs-gateway/) erişebileceği "ipfs://ipfs/QmZy8eRLhToqPk5154SJkTJfPD8AMnPAjBi6w1S61yNPrR" gibi içerik adreslerine dönüştürülür.
