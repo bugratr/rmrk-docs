@@ -1,80 +1,77 @@
 ---
-title: Getting Started
+başlık: Başlarken
 ---
 
-This documentation portal should provide you with everything you need to get started with RMRK as a
-user or developer.
+Bu dokümantasyon portalı, bir kullanıcı veya geliştirici olarak RMRK'ye başlamanız için ihtiyacınız olan her şeyi sağlamalıdır.
 
-Please refer to the individual sub-sections of the docs for more information on specific versions,
-products, and tools RMRK offers, or read below to get familiar with RMRK in general.
+Belirli sürümler hakkında daha fazla bilgi için lütfen dokümanların ayrı ayrı alt bölümlerine bakın.
+RMRK'nın sunduğu ürünler ve araçlar hakkında bilgi edinin veya genel olarak RMRK'yi tanımak için aşağıyı okuyun.
 
-> Note that these docs are geared towards technical users and those who would like to get to know
-> RMRK in depth. An easy-to-consume non-technical knowledgebase is published
-> [here](https://rmrk.gitbook.io/rmrk-faqs/).
+> Bu dokümanların teknik kullanıcılara ve sizi tanımak isteyenlere yönelik olduğunu unutmayın.
+> Derinlemesine RMRK. Okuması kolay, teknik olmayan bir bilgi bankası yayınlandı
+> [buradan ulaşabilirsiniz](https://rmrk.gitbook.io/rmrk-faqs/).
+> 
+##RMRK nedir?
 
-## What is RMRK?
+RMRK, birkaç "NFT 2.0 lego" ilkesini oluşturan bir dizi NFT standardıdır. Bu legoları koymak
+birlikte, bir kullanıcının keyfi karmaşıklıkta NFT sistemleri oluşturmasına olanak tanır.
 
-RMRK is a set of NFT standards which compose several "NFT 2.0 lego" primitives. Putting these legos
-together allows a user to create NFT systems of arbitrary complexity.
+Hemen dalmak istiyorsanız, [kavramlar](/concepts) sayfasına bakın.
 
-If you want to dive right in, see the [concepts](/concepts) page.
+Genel olarak, RMRK standardı üç formatta mevcuttur:
 
-Broadly, the RMRK standard exists in three formats:
+- [Kusama uygulaması](/rmrk2)
+- [EVM uygulaması](/evm)
+- [ÇERÇEVE Palet uygulaması](/paletler)
 
-- [Kusama implementation](/rmrk2)
-- [EVM implementation](/evm)
-- [FRAME Pallet implementation](/pallets)
-
-One of the best short introductions into RMRK is the following video:
+RMRK ile ilgili en iyi kısa tanıtımlardan biri aşağıdaki videodur:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2Qwpllwpkdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## What is RMRK's history?
+## RMRK'nın geçmişi nedir?
 
-RMRK (pronounced "remark") was founded in 2020 by [Bruno Škvorc](https://twitter.com/bitfalls), Web3
-Foundation's technical educator at the time. Originally a hobby project, RMRK evolved into a team of
-20 people.
+RMRK ("açıklama" olarak telaffuz edilir), 2020 yılında Web3 Foundation'ın o sırada teknik eğitimcisi olan [Bruno Škvorc](https://twitter.com/bitfalls) tarafından kuruldu. Başlangıçta bir hobi projesi olan RMRK, 20 kişilik bir ekibe dönüştü.
 
-Learn more about some of the team on [the homepage](https://rmrk.app).
+[Ana sayfada](https://rmrk.app) ekipten bazıları hakkında daha fazla bilgi edinin.
 
-The RMRK team is the custodian and main developer of the set of open source NFT 2.0 standards known
-as _RMRK standards_ and of the [Skybreach metaverse](https://skybreach.app), and a for-profit
-company building products on top of this infrastructure.
+RMRK ekibi, bilinen açık kaynaklı NFT 2.0 standartları setinin koruyucusu ve ana geliştiricisidir.
+_RMRK standartları_ ve [Skybreach metaverse](https://skybreach.app) ve kâr amaçlı
+şirket bu altyapının üzerine ürünler inşa ediyor.
 
-Put bluntly, the RMRK team wanted to build cool products, but the infrastructure to build them on
-did not exist yet so they chose to build the infrastructure first. This infrastructure is now
-available to everyone.
+Açıkça söylemek gerekirse, RMRK ekibi harika ürünler oluşturmak istiyordu, ancak bunları geliştirecek altyapı
+henüz yoktu, bu yüzden önce altyapıyı inşa etmeyi seçtiler. Bu altyapı artık
+herkes tarafından kullanılabilir.
 
-## How do I use RMRK?
+## RMRK'yı nasıl kullanırım?
 
-As a user or author, you can mint on the [Singular UI](https://singular.app). A self-help
-knowledgebase is set up [here](https://coda.io/@rmrk/faq), and
-our [YouTube channel](https://url.rmrk.app/yt) has various tutorials on how to use the app.
+Bir kullanıcı veya yazar olarak, [Singular UI](https://singular.app) üzerine yazabilirsiniz. Kendi kendine yardım
+bilgi bankası [burada](https://coda.io/@rmrk/faq) kurulur ve
+[YouTube kanalımızda](https://url.rmrk.app/yt) uygulamanın nasıl kullanılacağına ilişkin çeşitli eğiticiler bulunur.
 
-As a developer who wants to build their own wallet or UI for RMRK, you probably want to
-[learn the concepts first](/concepts), then refer to the individual tech stack you are interested in
-(Kusama, EVM, pallets (Rust)).
+RMRK için kendi cüzdanını veya kullanıcı arayüzünü oluşturmak isteyen bir geliştirici olarak, muhtemelen
+[önce kavramları öğrenin](/concepts), ardından ilgilendiğiniz teknoloji yığınına bakın
+(Kusama, EVM, paletler (Pas)).
 
-## RMRK-based projects
+## RMRK tabanlı projeler
 
-### Official
+### Resmi
 
-- [Singular](https://singular.app): the official NFT marketplace for RMRK NFTs: create and sell
-  advanced NFTs
-- [Kanaria](https://kanaria.rmrk.app): NFT birds that can wear other standalone NFTs, equip and
-  unequip items, and have multiple resources - the first production demo of RMRK 2.0
+- [Singular](https://singular.app): RMRK NFT'leri için resmi NFT pazarı: oluştur ve sat
+  gelişmiş NFT'ler
+- [Kanaria](https://kanaria.rmrk.app): Diğer bağımsız NFT'leri giyebilen, donatabilen ve
+  öğeleri çıkarın ve birden çok kaynağa sahip olun - RMRK 2.0'ın ilk üretim demosu
 
-### Unofficial
+### Gayri resmi
 
-- [NCVerse](https://neoncrisis.io/ncverse/back-alley): Neon Crisis, an NFT project on Moonriver and
-  the first user of RMRK tech on an EVM chain.
-- [Evrl00t](https://game.evrloot.com/game): an RPG game built on Kusama and the Kusama version of
+- [NCVerse](https://neoncrisis.io/ncverse/back-alley): Neon Crisis, Moonriver'da bir NFT projesi ve
+  EVM zincirindeki ilk RMRK teknolojisi kullanıcısı.
+- [Evrl00t](https://game.evrloot.com/game): Kusama ve Kusama versiyonu üzerine inşa edilmiş bir RPG oyunu
   RMRK.
 
-## The RMRK Token
+## RMRK Jetonu
 
-The [RMRK token](https://coinmarketcap.com/currencies/rmrk/) is the protocol's official token. It is
-not required to use the protocol, but can augment the experience, and is required as a deposit for
-Sybil resistance and spam resistance when creating collections that get auto-added to Singular from
-the various supported chains. For more information about the $RMRK token, please see
-[this page](https://singular.app/tokens).
+[RMRK belirteci](https://coinmarketcap.com/currencies/rmrk/), protokolün resmi belirtecidir. Bu
+protokolü kullanmak için gerekli değildir, ancak deneyimi artırabilir ve depozito olarak gereklidir.
+Şuradan Singular'a otomatik eklenen koleksiyonlar oluştururken Sybil direnci ve spam direnci
+desteklenen çeşitli zincirler. $RMRK belirteci hakkında daha fazla bilgi için lütfen bkz.
+[bu sayfa](https://singular.app/tokens).
