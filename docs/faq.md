@@ -5,19 +5,18 @@ title: "FAQ: Frequently Asked Questions"
 The non-technical FAQ is now hosted in the [self-help knowledgebase](https://coda.io/@rmrk/faq).
 
 ## How does IPFS hosting work?
+IPFS veya Gezegenler Arası Dosya Sistemi, "içerik karması" kullanır. Bu, bir içerik parçasının, aynı girdi için her zaman aynı çıktıyı üreten tek yönlü bir matematiksel işlev olan bir karma algoritmadan geçirildiği anlamına gelir. Orijinal içerikteki tek bir harfi bile değiştirmek tamamen farklı bir hash üretir.
 
-IPFS, or Interplanetary File System, uses "content hashing". This means a piece of content is put through a hashing algorithm, a one-way mathematical function which always produces the same output for the same input. Changing even a single letter in the original content produces a completely different hash.
+Bu karmalar daha sonra bir tarayıcının veya [IPFS ağ geçidinin](https://docs.ipfs.io/concepts/ipfs-gateway/) erişebileceği "ipfs://ipfs/QmZy8eRLhToqPk5154SJkTJfPD8AMnPAjBi6w1S61yNPrR" gibi içerik adreslerine dönüştürülür.
 
-These hashes are then turned into content addresses like so: `ipfs://ipfs/QmZy8eRLhToqPk5154SJkTJfPD8AMnPAjBi6w1S61yNPrR` which a browser or [IPFS gateway](https://docs.ipfs.io/concepts/ipfs-gateway/) can access.
+Dünyanın dört bir yanındaki birçok makine IPFS protokolünü çalıştırır ve hangi içerik karmalarını barındırdıklarını bildirir, böylece belirli bir içerik parçasının bulunması gerekiyorsa ona giden bir yol kurulabilir.
 
-Many machines around the world run the IPFS protocol and advertise which content hashes they host, so that if a certain piece of content needs to be found, a path can be established to it.
+Bu makineler, bu içerik parçasına eriştiklerinde, onu indirir ve yeniden barındırır, hafızasında tutar, sizin onu tüketmenize izin verir ve başkalarına bir kopyasına sahip olduklarının reklamını yaparak web'de yayar. Ancak içerik sabitlenmediği sürece, belirli bir süre erişilmediğinde veya makine çöp toplama olarak bilinen bir işlemle yeniden başlatıldığında kaybolur.
 
-These machines, when they access this piece of content, download it and rehost it, keeping it in their memory, allowing you to consume it and advertising to others that they have a copy, propagating it across the web. But unless the content is _pinned_ it will disappear after a certain period of time of not being accessed, or once the machine reboots via a process known as garbage collection. 
+Sabitlenen içerik asla çöp toplamaz.
 
-Pinned content is never garbage collected.
+IPFS içeriğini sizin için bir ücret karşılığında indiren ve sabitleyen çeşitli hizmetler mevcuttur. [Pinata](https://pinata.cloud) ve [Crust](https://crust.network) çok popüler olanlardır. Alternatif olarak, [kendi düğümünüzü çalıştırabilir](https://medium.com/ethereum-developers/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398) ve içeriği oraya sabitleyebilirsiniz, ancak düğümünüz Bunun çalışması için her zaman çevrimiçi ve internet üzerinden erişilebilir olması gerekir ki bu çoğu insanın evde çalıştırabileceği bir şey değildir.
 
-Several services exist that download and pin IPFS content for you, for a fee. [Pinata](https://pinata.cloud) and [Crust](https://crust.network) are very popular ones. Alternatively, you can [run your own node](https://medium.com/ethereum-developers/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398) and pin the content there, but your node would have to be always online and accessible via the internet for this to work, which is not something most people can run at home.
+NFT içeriğini IPFS'de barındırırken, kendi içeriğinizin böyle bir hizmetle sabitlenmesi için ödeme yapmanız veya içeriğin kalıcı olduğundan ve kaybolmadığından emin olmanız beklenir.
 
-When hosting NFT content on IPFS, you are expected to pay for pinning of your own content with one such service, or otherwise make sure the content is persistent and will not disappear.
-
-When minting via [Singular.app](https://singular.app), RMRK covers the pinning fee.
+[Singular.app](https://singular.app) aracılığıyla basıldığında, sabitleme ücretini RMRK karşılar.
